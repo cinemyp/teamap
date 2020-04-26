@@ -1,5 +1,5 @@
 ymaps.ready(init);
-//privaet
+
 function init() {
 
     var myMap = new ymaps.Map("map", {
