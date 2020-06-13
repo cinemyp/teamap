@@ -33,7 +33,8 @@ summary {
 }
 
 .col-2 {
-    max-width: 50%;
+    width: 50%;
+    padding: 0;
 }
 
 .side {
@@ -60,11 +61,44 @@ blockquote {
 body {
     height: auto;
     min-height: 95%;
-    font-size: 10px;
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: black;
+    color: white;
+}
+
+.site-header {
+    display: inline-block;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+}
+
+.site-footer {
+    background: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
 }
 
 p {
-    font-size: 20px;
+    font-size: 1.2em;
+    margin: 0em;
+}
+
+.shop img {
+    display: block;
+    width: 100%;
+}
+
+.shop-content {
+    padding-left: 1.5em;
+    padding-top: 1.5em;
 }

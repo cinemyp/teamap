@@ -5,28 +5,38 @@
 <head>
     <title>Чайная карта</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Чайная карта Москвы">
     <meta name="keywords" content="чай, карта, Москва, чайный обзор">
     <meta name="author" content="kiyamov bros">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="shop">
+    <div class="shop-page">
         <div class="side col col-2">
-            <header></header>
             <div>
-                <article>
-                    <h1>Чайная карта</h1>
-                    <p>Йоу. Это каста, вы слышали о нас, да. Услышите еще не раз.</p>
+                <article class="shop">
+                    <header>
+                        <div class='site-header'><span>чайная карта</span></div>
+
+                        <img>
+                    </header>
+                    <div class="shop-content">
+                        <div class="col-box">
+                            <div class="title"></div>
+                            <div class="desc"></div>
+                            <div class="tags"></div>
+                            <div class="places"></div>
+                        </div>
+                    </div>
+                    <footer class="site-footer">
+                        Copyright &copy; 2020. Kiyamov's bros
+                    </footer>
                 </article>
             </div>
-            <footer>
-                <div class="jumbotron">
-                    Copyright &copy; 2020. Kiyamov's bros
-                </div>
-            </footer>
+
         </div>
         <div class="map-box col col-2">
             <div id="map"></div>

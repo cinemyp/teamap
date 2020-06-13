@@ -46,10 +46,12 @@ function init() {
     });
     var myPlaceMark5 = new ymaps.Placemark([55.62556706911858, 37.612290499999986], {
         balloonContentHeader: 'Мойчай.ру',
-        balloonContentBody: 'М. Тульская, ул. Мытная, 74, Даниловский рынок',
+        balloonContentBody: 'м. Южная, ул. Кировоградская 9к1',
         balloonContentFooter: '11.00 - 22.00',
         hintContent: "Мойчай.ру"
     });
+    //Скопировать код выше, вставить свои данные
+    //Потом сделать как ниже, добавить в массив
     places.add(myPlaceMark);
     places.add(myPlaceMark1);
     places.add(myPlaceMark2);
@@ -57,4 +59,16 @@ function init() {
     places.add(myPlaceMark4);
     places.add(myPlaceMark5);
     myMap.geoObjects.add(places);
+
+    places.events.add('click', function(e) {
+        console.log(e.get('target').properties._data);
+        onShopClick(e.get('target').properties._data);
+    });
+}
+
+function onShopClick(data) {
+    $('.shop img').attr('src', 'img/moichai1.jpg')
+    $('.shop-content .title').html('<h1>' + data.balloonContentHeader + '</h1>')
+    $('.shop-content .places').html('<p>' + data.balloonContentBody + '</p><p>' + data.balloonContentFooter + '</p>');
+    //$('.shop').prepend('<img src="img/moichai1.jpg">')
 }
