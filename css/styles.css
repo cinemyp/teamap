@@ -33,8 +33,15 @@ summary {
 }
 
 .col-2 {
-    width: 50%;
     padding: 0;
+}
+
+.side.col.col-2 {
+    width: 33%;
+}
+
+.map-box.col.col-2 {
+    width: 67%;
 }
 
 .side {
@@ -71,14 +78,16 @@ header {
     font-size: 1.5em;
     font-weight: bold;
     background: black;
+}
+
+.back-link {
+    display: inline-block;
+    padding: .5em 1em .5em 1em;
     color: white;
 }
 
-.site-header {
-    display: inline-block;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    padding-left: 1em;
+.back-link:hover {
+    color: gold;
 }
 
 .site-footer {
@@ -86,6 +95,7 @@ header {
     padding-top: 2em;
     padding-bottom: 2em;
     padding-left: 1em;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 p {
@@ -93,12 +103,29 @@ p {
     margin: 0em;
 }
 
-.shop img {
+#shop-img {
     display: block;
     width: 100%;
 }
 
-.shop-content {
-    padding-left: 1.5em;
-    padding-top: 1.5em;
+.side {
+    display: block;
+}
+
+.shops ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-style: normal;
+    display: inline;
+    font-weight: bold;
+}
+
+li {
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 1em;
 }
